@@ -1,30 +1,36 @@
-// let's change the heading when the page loads
-//var heading = document.querySelector("h1");
-//console.log("the heading is", heading);
-//heading.innerHTML = "I CHING";
 
 function getRandomInt(max) {
   return Math.floor( Math.random() * Math.floor(max) );
 }
 
+var savedData = null;
+var randoHex = null;
+
+fetch("https://api.myjson.com/bins/e4v94").then(function (response) {
+    response.json().then(function (data) {
+      console.log("data loaded from server", data);
+    savedData = data;
+    console.log("data from 'savedData' variable", savedData);
+
+    });
+  });
+
 var theButton = document.querySelector("#button");
 console.log("the button is", theButton);
-theButton.onclick = function () {
-  //change the hexagram image
-  document.querySelector("#hex").style.backgroundImage = "url(1.png";
 
-  //console.log("the random hex is", )
+theButton.onclick = function () {
+  //change the hexagram image to random hex
+  var rando = getRandomInt(11);
+  console.log("random int was", rando);
+  randoHexFilename = savedData[rando].fileName;
+  console.log("the random hex filename is", randoHexFilename);
+  document.querySelector("#hex").style.backgroundImage = randoHexFilename;
 
   // add an item to the history list when the button is clicked
   var hexHistory = document.querySelector("#historyList");
   console.log("the list is", hexHistory);
   var newItem = document.createElement("li");
-  newItem.innerHTML = "This is a new list item.";
+  newItem.innerHTML = savedData[rando].hexName;
   hexHistory.appendChild(newItem);
+  //add time and date
 };
-
-fetch("https://api.myjson.com/bins/z1lsc").then(function (response) {
-  response.json().then(function (data) {
-    console.log("data loaded from server", data);
-  });
-});

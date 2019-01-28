@@ -3,9 +3,9 @@ body {
 }
 h1{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  padding-top: 60px;
+  padding-top: 40px;
   color: #000;
   font-size: 60px;
   -webkit-text-stroke: 1px goldenrod;
@@ -21,9 +21,20 @@ h2{
   text-align: center;
   color: #000;
   font-size: 20px;
-  margin-right:40px;
-  margin-left: 40px;
+  margin-right:150px;
+  margin-left: 150px;
+  padding-bottom: 20px;
 }
+
+#hexhistory{
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  margin-right:250px;
+  margin-left: 250px;
+  padding-bottom: 20px;
+}
+
 
 #button{
   text-align: center;
@@ -48,6 +59,7 @@ h2{
   background-repeat: no-repeat;
   margin-left: 390px;
   margin-right: auto;
+  background-image: url(tao.png);
 }
 
 body{
@@ -66,4 +78,5 @@ footer{
   color: #332c2b;
 }
 
-/*background-image: url(tao.png);
+
+

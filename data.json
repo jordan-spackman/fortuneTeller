@@ -1,8 +1,51 @@
 {
-    "firstName": "John",
-    "lastName": "Smith",
-    "address": {
-        "streetAddress": "21 2nd Street",
-        "city": "New York"
+    "1": {
+        "fileName": "url(1.png)",
+        "hexName": "Initiating"
+    },
+
+    "2": {
+        "fileName": "url(2.png)",
+        "hexName": "Responding"
+    },
+
+    "3": {
+        "fileName": "url(3.png)",
+        "hexName": "Beginning"
+    },
+
+    "4": {
+        "fileName": "url(4.png)",
+        "hexName": "Childhood"
+    },
+
+    "5": {
+        "fileName": "url(5.png)",
+        "hexName": "Needing"
+    },
+
+    "6": {
+        "fileName": "url(6.png)",
+        "hexName": "Contention"
+    },
+
+    "7": {
+        "fileName": "url(7.png)",
+        "hexName": "Multitude"
+    },
+
+    "8": {
+        "fileName": "url(8.png)",
+        "hexName": "Union"
+    },
+
+    "9": {
+        "fileName": "url(9.png)",
+        "hexName": "Little Accumulation"
+    },
+
+    "10": {
+        "fileName": "url(10.png)",
+        "hexName": "Fullfillment"
     }
 }
